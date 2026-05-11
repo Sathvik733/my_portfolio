@@ -236,7 +236,9 @@
   inset: 48px;
   border: 1px solid color-mix(in srgb, var(--text) 18%, transparent);
   border-radius: 50%;
-  animation: spin 18s linear infinite;
+  animation: spinCircle 12s linear infinite;
+  transform-origin: center;
+  will-change: transform;
 }
 
 .profile-orbit {
@@ -703,7 +705,10 @@
   }
 }
 
-@keyframes spin {
+@keyframes spinCircle {
+  from {
+    transform: rotate(0deg);
+  }
   to {
     transform: rotate(360deg);
   }
