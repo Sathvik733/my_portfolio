@@ -52,10 +52,17 @@
   box-sizing: border-box;
 }
 
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 html {
   font-size: 16px;
   scroll-behavior: smooth;
   scroll-padding-top: 104px;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 body {
@@ -69,6 +76,10 @@ body {
     var(--bg);
 }
 
+#root {
+  min-height: 100vh;
+}
+
 body,
 button,
 input,
@@ -79,6 +90,7 @@ textarea {
 }
 
 button {
+  border: 0;
   font-family: inherit;
 }
 
@@ -95,7 +107,14 @@ h1,
 h2,
 h3,
 p {
+  margin: 0;
   overflow-wrap: anywhere;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
 }
 
 ::selection {

@@ -1,18 +1,18 @@
 .site-shell {
   width: min(1160px, calc(100% - 40px));
   margin: 0 auto;
-  padding: 24px 0 72px;
+  padding: 1.5rem 0 4.5rem;
 }
 
 .nav {
   position: sticky;
-  top: 18px;
+  top: 1.125rem;
   z-index: 20;
   display: grid;
   grid-template-columns: auto 1fr auto;
   align-items: center;
-  gap: 16px;
-  padding: 10px;
+  gap: 1rem;
+  padding: 0.625rem;
   border: 1px solid var(--border);
   border-radius: 12px;
   background: color-mix(in srgb, var(--surface) 88%, transparent);
@@ -30,12 +30,12 @@
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  font-weight: 750;
+  font-weight: 700;
 }
 
 .brand {
-  gap: 10px;
-  padding: 4px 12px 4px 4px;
+  gap: 0.625rem;
+  padding: 0.25rem 0.75rem 0.25rem 0.25rem;
   color: #ffffff;
   background:
     linear-gradient(135deg, color-mix(in srgb, var(--accent) 28%, transparent), transparent),
@@ -45,9 +45,9 @@
 }
 
 .brand img {
-  width: 34px;
-  height: 34px;
-  border-radius: 10px;
+  width: 2.125rem;
+  height: 2.125rem;
+  border-radius: 0.625rem;
   display: block;
 }
 
@@ -96,12 +96,12 @@
 }
 
 .hero-section {
-  min-height: calc(100svh - 96px);
+  min-height: auto;
   display: grid;
-  grid-template-columns: minmax(0, 1.08fr) minmax(340px, 0.76fr);
+  grid-template-columns: minmax(0, 1.08fr) minmax(20rem, 0.76fr);
   align-items: center;
-  gap: clamp(28px, 5vw, 64px);
-  padding: clamp(72px, 9vw, 116px) 0 72px;
+  gap: clamp(1.75rem, 4vw, 4rem);
+  padding: clamp(4.5rem, 8vw, 6.5rem) 0 clamp(3.75rem, 6vw, 4.5rem);
 }
 
 .status-row {
@@ -109,9 +109,9 @@
   max-width: 100%;
   display: inline-flex;
   align-items: center;
-  gap: 10px;
-  margin-bottom: 20px;
-  padding: 8px 12px;
+  gap: 0.625rem;
+  margin-bottom: 1.25rem;
+  padding: 0.5rem 0.75rem;
   border: 1px solid var(--border);
   border-radius: 999px;
   color: var(--muted);
@@ -121,8 +121,8 @@
 }
 
 .status-dot {
-  width: 9px;
-  height: 9px;
+  width: 0.5625rem;
+  height: 0.5625rem;
   border-radius: 50%;
   background: var(--success);
   box-shadow: 0 0 0 6px color-mix(in srgb, var(--success) 16%, transparent);
@@ -146,7 +146,7 @@
   margin: 0;
   color: var(--accent);
   font-size: var(--font-xs);
-  font-weight: 850;
+  font-weight: 800;
   letter-spacing: 0.12em;
   text-transform: uppercase;
 }
@@ -209,7 +209,7 @@
 
 .profile-panel {
   position: relative;
-  min-height: 456px;
+  min-height: clamp(22rem, 38vw, 28.5rem);
   overflow: hidden;
   border: 1px solid var(--border);
   border-radius: 16px;
@@ -247,30 +247,30 @@
 .profile-orbit span {
   position: absolute;
   display: grid;
-  width: 66px;
-  height: 66px;
+  width: 4.125rem;
+  height: 4.125rem;
   place-items: center;
   border: 1px solid color-mix(in srgb, var(--accent) 30%, var(--border));
   border-radius: 50%;
   color: var(--text);
   background: color-mix(in srgb, var(--surface) 90%, transparent);
   box-shadow: var(--shadow-soft);
-  font-weight: 850;
+  font-weight: 800;
 }
 
 .profile-orbit span:nth-child(1) {
-  top: 56px;
-  left: 54px;
+  top: 3.5rem;
+  left: 3.375rem;
 }
 
 .profile-orbit span:nth-child(2) {
-  top: 88px;
-  right: 48px;
+  top: 5.5rem;
+  right: 3rem;
 }
 
 .profile-orbit span:nth-child(3) {
-  right: 86px;
-  bottom: 106px;
+  right: 5.375rem;
+  bottom: 6.625rem;
 }
 
 .profile-core {
@@ -301,9 +301,9 @@
 
 .stats-grid {
   position: absolute;
-  right: 18px;
-  bottom: 18px;
-  left: 18px;
+  right: 1.125rem;
+  bottom: 1.125rem;
+  left: 1.125rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 12px;
@@ -324,14 +324,14 @@
 }
 
 .section {
-  padding: clamp(68px, 8vw, 104px) 0;
+  padding: clamp(4.25rem, 7vw, 6.25rem) 0;
   border-top: 1px solid var(--border);
 }
 
 .section-heading {
   display: grid;
-  grid-template-columns: minmax(150px, 0.34fr) minmax(0, 1fr);
-  gap: 32px;
+  grid-template-columns: minmax(9rem, 0.34fr) minmax(0, 1fr);
+  gap: clamp(1.25rem, 3vw, 2rem);
   align-items: start;
   margin-bottom: 34px;
 }
@@ -369,20 +369,20 @@
 
 .about-grid > p {
   margin: 0;
-  padding: 30px;
+  padding: 1.875rem;
   color: var(--muted);
   font-size: var(--font-md);
 }
 
 .highlight-card {
-  padding: 30px;
+  padding: 1.875rem;
 }
 
 .highlight-card span {
   display: block;
   margin-bottom: 12px;
   color: var(--accent);
-  font-weight: 850;
+  font-weight: 800;
 }
 
 .highlight-card strong {
@@ -392,13 +392,13 @@
 
 .metrics-section {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr));
   gap: 18px;
-  padding-bottom: clamp(68px, 8vw, 104px);
+  padding-bottom: clamp(4.25rem, 7vw, 6.25rem);
 }
 
 .metrics-section article {
-  padding: 22px;
+  padding: 1.375rem;
   transition:
     transform 180ms ease,
     border-color 180ms ease;
@@ -427,7 +427,7 @@
 }
 
 .skills-grid.grouped {
-  grid-template-columns: repeat(6, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 19rem), 1fr));
 }
 
 .skill-card,
@@ -440,16 +440,9 @@
 }
 
 .skill-card {
-  min-height: 216px;
-  padding: 24px;
+  padding: 1.5rem;
   position: relative;
   overflow: hidden;
-  grid-column: span 2;
-}
-
-.skill-card:nth-child(1),
-.skill-card:nth-child(3) {
-  grid-column: span 3;
 }
 
 .skill-card::before {
@@ -478,15 +471,16 @@
 }
 
 .projects-grid {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr));
   align-items: stretch;
 }
 
 .project-card {
-  min-height: 440px;
+  min-height: 0;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  padding: 24px;
+  padding: 1.5rem;
   position: relative;
   overflow: hidden;
 }
@@ -509,8 +503,8 @@
 }
 
 .project-icon-box {
-  width: 50px;
-  height: 50px;
+  width: 3.125rem;
+  height: 3.125rem;
   display: grid;
   place-items: center;
   border: 1px solid color-mix(in srgb, var(--accent) 40%, var(--border));
@@ -521,8 +515,8 @@
 }
 
 .project-icon {
-  width: 22px;
-  height: 22px;
+  width: 1.375rem;
+  height: 1.375rem;
   fill: currentColor;
   color: var(--accent);
 }
@@ -543,7 +537,7 @@
 .project-topline a,
 .contact-card a {
   color: var(--accent);
-  font-weight: 850;
+  font-weight: 800;
   text-decoration: none;
 }
 
@@ -593,7 +587,7 @@
   color: var(--muted);
   background: var(--chip-bg);
   font-size: var(--font-xs);
-  font-weight: 750;
+  font-weight: 700;
 }
 
 .skill-tags {
@@ -620,15 +614,15 @@
 
 .timeline-item {
   display: grid;
-  grid-template-columns: minmax(210px, 0.38fr) minmax(0, 1fr);
+  grid-template-columns: minmax(13rem, 0.38fr) minmax(0, 1fr);
   gap: 28px;
-  padding: 28px;
+  padding: 1.75rem;
 }
 
 .timeline-item span,
 .company {
   color: var(--accent);
-  font-weight: 850;
+  font-weight: 800;
 }
 
 .timeline-item h3 {
@@ -640,12 +634,12 @@
 }
 
 .cert-grid {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr));
 }
 
 .cert-card {
-  min-height: 174px;
-  padding: 26px;
+  min-height: 0;
+  padding: 1.625rem;
 }
 
 .cert-card span {
@@ -653,7 +647,7 @@
   margin-bottom: 16px;
   color: var(--accent);
   font-size: var(--font-xs);
-  font-weight: 850;
+  font-weight: 800;
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
@@ -668,14 +662,14 @@
 
 .contact-card {
   display: grid;
-  grid-template-columns: 1.35fr 0.85fr 0.8fr;
+  grid-template-columns: minmax(0, 1.35fr) minmax(0, 0.85fr) minmax(0, 0.8fr);
   gap: 12px;
-  padding: 14px;
+  padding: 0.875rem;
 }
 
 .contact-card a,
 .contact-card span {
-  min-height: 62px;
+  min-height: 3.875rem;
   display: grid;
   place-items: center;
   border: 1px solid transparent;
@@ -759,20 +753,7 @@
   }
 
   .profile-panel {
-    min-height: 390px;
-  }
-
-  .skills-grid.grouped,
-  .projects-grid,
-  .cert-grid,
-  .metrics-section {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .skill-card,
-  .skill-card:nth-child(1),
-  .skill-card:nth-child(3) {
-    grid-column: auto;
+    min-height: clamp(22rem, 54vw, 24.5rem);
   }
 
   .contact-card {
@@ -783,11 +764,11 @@
 @media (max-width: 560px) {
   .site-shell {
     width: min(100% - 18px, 460px);
-    padding-top: 10px;
+    padding-top: 0.625rem;
   }
 
   .nav {
-    top: 8px;
+    top: 0.5rem;
   }
 
   .nav-links a {
@@ -812,12 +793,12 @@
   }
 
   .profile-panel {
-    min-height: 360px;
+    min-height: 22.5rem;
   }
 
   .profile-orbit span {
-    width: 54px;
-    height: 54px;
+    width: 3.375rem;
+    height: 3.375rem;
   }
 
   .skills-grid.grouped,
@@ -833,9 +814,9 @@
   .highlight-card,
   .timeline-item,
   .skill-card,
-  .cert-card,
-  .metrics-section article {
-    padding: 20px;
+    .cert-card,
+    .metrics-section article {
+    padding: 1.25rem;
   }
 
   .project-card,
