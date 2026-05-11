@@ -12,6 +12,15 @@
   --shadow-soft: 0 14px 38px rgba(0, 0, 0, 0.22);
   --shadow-card: 0 24px 80px rgba(0, 0, 0, 0.34);
   --shadow-accent: 0 16px 34px rgba(56, 189, 248, 0.22);
+  --font-xs: 0.78rem;
+  --font-sm: 0.875rem;
+  --font-base: 1rem;
+  --font-md: 1.05rem;
+  --font-lg: 1.18rem;
+  --font-xl: 1.38rem;
+  --font-2xl: 2rem;
+  --font-3xl: 2.65rem;
+  --font-hero: 4.7rem;
   font-family:
     Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     sans-serif;
@@ -44,6 +53,7 @@
 }
 
 html {
+  font-size: 16px;
   scroll-behavior: smooth;
   scroll-padding-top: 104px;
 }
@@ -64,7 +74,7 @@ button,
 input,
 textarea {
   font-family: inherit;
-  font-size: 16px;
+  font-size: var(--font-base);
   line-height: 1.5;
 }
 
@@ -91,4 +101,25 @@ p {
 ::selection {
   color: #ffffff;
   background: var(--accent);
+}
+
+@media (max-width: 920px) {
+  :root {
+    --font-2xl: 1.8rem;
+    --font-3xl: 2.25rem;
+    --font-hero: 3.8rem;
+  }
+}
+
+@media (max-width: 560px) {
+  :root {
+    --font-sm: 0.84rem;
+    --font-base: 0.95rem;
+    --font-md: 1rem;
+    --font-lg: 1.08rem;
+    --font-xl: 1.25rem;
+    --font-2xl: 1.55rem;
+    --font-3xl: 2rem;
+    --font-hero: 2.65rem;
+  }
 }
