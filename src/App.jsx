@@ -148,24 +148,25 @@ function App() {
       </nav>
 
       <section className="hero-section section-fade" id="hero">
+        <div className="hero-ambient" aria-hidden="true"></div>
         <div className="hero-copy">
           <div className="status-row">
             <span className="status-dot"></span>
             Open to internships and junior developer roles in France / Europe
           </div>
-          <p className="eyebrow">Software Engineer - Paris, France</p>
-          <h1>Aileni Sathvik Reddy</h1>
+          <p className="eyebrow">Aileni Sathvik Reddy - Software Engineer, Paris</p>
+          <h1>Building reliable fullstack, cloud, and AI-enabled software.</h1>
           <p className="hero-text">
-            Software Engineering Master's student at EPITA with professional
-            experience in backend systems, automation, fullstack development,
-            cloud platforms, and AI-enabled applications.
+            Master's student at EPITA with professional experience in backend
+            systems, automation, fullstack development, cloud platforms, and
+            practical AI applications.
           </p>
           <div className="hero-actions">
             <a className="button primary" href="#projects">
               View Projects
             </a>
             <a className="button secondary" href="#contact">
-              Email Me
+              Contact Me
             </a>
           </div>
           <div className="focus-row" aria-label="Engineering focus areas">
@@ -350,10 +351,39 @@ function App() {
           <p className="eyebrow">Contact</p>
           <h2>Available for software engineering internships and junior roles.</h2>
         </div>
-        <div className="contact-card">
-          <a href="mailto:sathvik733.fr@gmail.com">sathvik733.fr@gmail.com</a>
-          <a href="tel:+33780745942">+33 780 745 942</a>
-          <span>Paris, France</span>
+        <div className="contact-layout">
+          <div className="contact-message">
+            <h3>Let us connect about engineering opportunities.</h3>
+            <p>
+              I am open to internships, junior software engineering roles, and
+              fullstack development opportunities across France and Europe.
+            </p>
+            <a
+              className="button primary"
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=sathvik733.fr@gmail.com"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Send Email
+            </a>
+          </div>
+          <div className="contact-card">
+            <a
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=sathvik733.fr@gmail.com"
+              target="_blank"
+              rel="noreferrer"
+            >
+              sathvik733.fr@gmail.com
+            </a>
+            <a href="tel:+33780745942">+33 780 745 942</a>
+            <span>Paris, France</span>
+            <a href="https://www.linkedin.com/in/sathvikreddyaileni" target="_blank" rel="noreferrer">
+              LinkedIn
+            </a>
+            <a href="https://github.com/Sathvik733" target="_blank" rel="noreferrer">
+              GitHub
+            </a>
+          </div>
         </div>
       </section>
     </main>

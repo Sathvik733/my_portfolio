@@ -1,17 +1,18 @@
 :root {
-  --bg: #0b1220;
-  --surface: #111a2b;
-  --surface-raised: #17243a;
+  --bg: #080f1d;
+  --surface: #111827;
+  --surface-raised: #182235;
   --text: #f6f8fb;
-  --muted: #a8b3c5;
-  --border: #26344c;
-  --accent: #38bdf8;
-  --accent-strong: #22c55e;
+  --muted: #a9b6ca;
+  --border: #29364d;
+  --accent: #5ac8fa;
+  --accent-strong: #34d399;
   --success: #22c55e;
-  --chip-bg: #192842;
-  --shadow-soft: 0 14px 38px rgba(0, 0, 0, 0.22);
-  --shadow-card: 0 24px 80px rgba(0, 0, 0, 0.34);
-  --shadow-accent: 0 16px 34px rgba(56, 189, 248, 0.22);
+  --chip-bg: #1c2a40;
+  --surface-glass: rgba(17, 24, 39, 0.78);
+  --shadow-soft: 0 16px 42px rgba(0, 0, 0, 0.24);
+  --shadow-card: 0 26px 84px rgba(0, 0, 0, 0.36);
+  --shadow-accent: 0 18px 40px rgba(90, 200, 250, 0.18);
   --font-xs: 0.78rem;
   --font-sm: 0.875rem;
   --font-base: 1rem;
@@ -33,19 +34,20 @@
 }
 
 :root[data-theme='light'] {
-  --bg: #f5f7fb;
+  --bg: #f7f9fc;
   --surface: #ffffff;
-  --surface-raised: #eef4f8;
+  --surface-raised: #eef5fb;
   --text: #0f172a;
-  --muted: #5f6f84;
-  --border: #d8e1ec;
-  --accent: #0369a1;
-  --accent-strong: #15803d;
+  --muted: #62718a;
+  --border: #dbe5f1;
+  --accent: #0478b8;
+  --accent-strong: #12845a;
   --success: #16a34a;
-  --chip-bg: #eaf2f8;
-  --shadow-soft: 0 14px 34px rgba(16, 24, 38, 0.08);
-  --shadow-card: 0 24px 70px rgba(16, 24, 38, 0.14);
-  --shadow-accent: 0 16px 34px rgba(3, 105, 161, 0.18);
+  --chip-bg: #edf5fb;
+  --surface-glass: rgba(255, 255, 255, 0.82);
+  --shadow-soft: 0 16px 36px rgba(15, 23, 42, 0.08);
+  --shadow-card: 0 24px 72px rgba(15, 23, 42, 0.13);
+  --shadow-accent: 0 18px 38px rgba(4, 120, 184, 0.16);
 }
 
 * {
@@ -70,10 +72,11 @@ body {
   min-height: 100vh;
   margin: 0;
   background:
-    linear-gradient(135deg, color-mix(in srgb, var(--accent) 14%, transparent), transparent 34%),
-    radial-gradient(circle at 90% 8%, color-mix(in srgb, var(--accent-strong) 12%, transparent), transparent 30%),
-    linear-gradient(180deg, transparent 0%, color-mix(in srgb, var(--surface) 34%, transparent) 100%),
+    linear-gradient(135deg, color-mix(in srgb, var(--accent) 12%, transparent), transparent 32%),
+    radial-gradient(circle at 88% 8%, color-mix(in srgb, var(--accent-strong) 12%, transparent), transparent 30%),
+    linear-gradient(180deg, transparent 0%, color-mix(in srgb, var(--surface) 42%, transparent) 100%),
     var(--bg);
+  background-attachment: fixed;
 }
 
 #root {
