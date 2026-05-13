@@ -178,8 +178,10 @@ function App() {
 
         <aside className="profile-panel" aria-label="Portfolio summary">
           <div className="panel-grid"></div>
-          <div className="circle-wrapper" aria-hidden="true">
-            <div className="rotating-circle"></div>
+          <div className="screen-glow" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
           </div>
           <div className="profile-orbit">
             <span>AI</span>

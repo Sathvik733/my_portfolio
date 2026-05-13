@@ -286,21 +286,52 @@
   mask-image: radial-gradient(circle, #000000 12%, transparent 72%);
 }
 
-.circle-wrapper {
+.screen-glow {
   position: absolute;
-  inset: 48px;
+  inset: 2.25rem;
   pointer-events: none;
+  overflow: hidden;
+  border: 1px solid color-mix(in srgb, var(--accent) 20%, transparent);
+  border-radius: 18px;
+  background:
+    linear-gradient(135deg, color-mix(in srgb, var(--accent) 10%, transparent), transparent 42%),
+    color-mix(in srgb, var(--surface) 38%, transparent);
+  opacity: 0.72;
 }
 
-.rotating-circle {
-  width: 100%;
-  height: 100%;
-  border: 1px solid color-mix(in srgb, var(--text) 18%, transparent);
-  border-radius: 50%;
-  animation: portfolioRotate 8s linear infinite !important;
-  display: inline-block;
-  transform-origin: center center;
+.screen-glow::before {
+  content: '';
+  position: absolute;
+  inset: -45%;
+  background:
+    linear-gradient(90deg, transparent 0 46%, color-mix(in srgb, var(--accent) 22%, transparent) 49% 51%, transparent 54% 100%),
+    linear-gradient(0deg, transparent 0 46%, color-mix(in srgb, var(--accent-strong) 16%, transparent) 49% 51%, transparent 54% 100%);
+  background-size: 3.25rem 3.25rem;
+  animation: screenDrift 16s linear infinite;
   will-change: transform;
+}
+
+.screen-glow span {
+  position: absolute;
+  right: 1rem;
+  left: 1rem;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, color-mix(in srgb, var(--accent) 42%, transparent), transparent);
+  animation: scanLine 4.5s ease-in-out infinite;
+}
+
+.screen-glow span:nth-child(1) {
+  top: 28%;
+}
+
+.screen-glow span:nth-child(2) {
+  top: 52%;
+  animation-delay: 1.2s;
+}
+
+.screen-glow span:nth-child(3) {
+  top: 76%;
+  animation-delay: 2.4s;
 }
 
 .profile-orbit {
@@ -860,12 +891,24 @@
   }
 }
 
-@keyframes portfolioRotate {
+@keyframes screenDrift {
   from {
-    transform: rotate(0deg);
+    transform: translate3d(-1rem, -1rem, 0);
   }
   to {
-    transform: rotate(360deg);
+    transform: translate3d(1rem, 1rem, 0);
+  }
+}
+
+@keyframes scanLine {
+  0%,
+  100% {
+    opacity: 0.2;
+    transform: translateX(-6%);
+  }
+  50% {
+    opacity: 0.72;
+    transform: translateX(6%);
   }
 }
 
@@ -887,8 +930,12 @@
     transition-duration: 1ms !important;
   }
 
-  .rotating-circle {
-    animation: portfolioRotate 8s linear infinite !important;
+  .screen-glow::before {
+    animation: screenDrift 16s linear infinite !important;
+  }
+
+  .screen-glow span {
+    animation: scanLine 4.5s ease-in-out infinite !important;
   }
 }
 
