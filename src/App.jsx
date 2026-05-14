@@ -117,10 +117,11 @@ function ProjectIcon({ type }) {
 }
 
 function App() {
-  const [theme, setTheme] = useState('dark')
+  const [theme, setTheme] = useState(() => localStorage.getItem('portfolio-theme') || 'dark')
 
   useEffect(() => {
     document.documentElement.dataset.theme = theme
+    localStorage.setItem('portfolio-theme', theme)
   }, [theme])
 
   return (
@@ -142,6 +143,7 @@ function App() {
           type="button"
           onClick={() => setTheme((current) => (current === 'dark' ? 'light' : 'dark'))}
           aria-label="Toggle color theme"
+          aria-pressed={theme === 'light'}
         >
           {theme === 'dark' ? 'Light' : 'Dark'}
         </button>

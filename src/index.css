@@ -144,4 +144,8 @@ svg {
     --font-3xl: 2rem;
     --font-hero: 2.65rem;
   }
+
+  body {
+    background-attachment: scroll;
+  }
 }
