@@ -18,6 +18,8 @@ const skillGroups = [
       'Node.js',
       'Next.js',
       'Electron.js',
+      'Tailwind CSS',
+      'JWT Authentication',
     ],
   },
   {
@@ -41,11 +43,12 @@ const skillGroups = [
       'Docker',
       'Terraform',
       'GitHub Actions',
+      'Render',
     ],
   },
   {
     title: 'Databases',
-    items: ['PostgreSQL', 'Oracle SQL', 'MySQL', 'MongoDB', 'Google Cloud Spanner'],
+    items: ['PostgreSQL', 'Oracle SQL', 'MySQL', 'MongoDB', 'Google Cloud Spanner', 'Neon'],
   },
   {
     title: 'Tools',
@@ -85,6 +88,14 @@ const projects = [
     description:
       'ML model for cardiovascular disease prediction with 90% accuracy and dashboards for interpreting key health indicators.',
     stack: ['Python', 'KNN', 'Machine Learning', 'Data Preprocessing', 'Visualization'],
+  },
+  {
+    title: 'LogLens',
+    type: 'Production Log Monitoring Dashboard',
+    icon: 'cloud',
+    description:
+      'Full-stack log monitoring dashboard with JWT-based authentication, project-based API keys, secure log ingestion, and advanced filtering. Integrated Neon PostgreSQL for storage and deployed on Render with responsive UI and production-ready configuration.',
+    stack: ['React.js', 'Flask', 'PostgreSQL', 'REST APIs', 'JWT Authentication', 'Render', 'Neon', 'Tailwind CSS'],
   },
 ]
 
