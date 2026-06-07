@@ -97,7 +97,23 @@ const projects = [
       'Full-stack log monitoring dashboard with JWT-based authentication, project-based API keys, secure log ingestion, and advanced filtering. Integrated Neon PostgreSQL for storage and deployed on Render with responsive UI and production-ready configuration.',
     stack: ['React.js', 'Flask', 'PostgreSQL', 'REST APIs', 'JWT Authentication', 'Render', 'Neon', 'Tailwind CSS'],
   },
-]
+  {
+    title: 'CareerTrack',
+    type: 'Job Application Tracking Platform',
+    icon: 'briefcase',
+    description:
+      'Full-stack job application tracker that helps users manage applications, track statuses, and organize company, position, date, job link, and notes. Built with secure authentication, CRUD operations, user-specific dashboards, and PostgreSQL database integration.',
+    stack: ['Flask', 'Python', 'PostgreSQL', 'SQLAlchemy', 'Flask-Bcrypt', 'HTML', 'CSS', 'Render', 'Neon'],
+  },
+  {
+    title: 'InterviewMate',
+    type: 'AI-Powered Interview Preparation Platform',
+    icon: 'bot',
+    description:
+      'AI-powered interview preparation platform with user registration, secure JWT authentication, personalized interview question generation, and a modern React interface. Designed to help candidates practice technical and behavioral interview questions efficiently.',
+    stack: ['React.js', 'FastAPI', 'Python', 'JWT Authentication', 'SQLAlchemy', 'Alembic', 'REST APIs', 'Tailwind CSS'],
+  },
+];
 
 const certifications = [
   'AI agents, Generative AI, and LLM application fundamentals',
@@ -117,6 +133,12 @@ function ProjectIcon({ type }) {
     ),
     activity: (
       <path d="M13.3 20.4h-2.1l-2.7-8.1-1.3 3.1H3v-2h2.8l1.9-4.6h1.8l2.8 8.2 2.4-13.4h2l2.1 9.8H21v2h-3.8l-1.3-6-2.6 11Z" />
+    ),
+    briefcase: (
+      <path d="M9 5h6a2 2 0 0 1 2 2v1h1a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h1V7a2 2 0 0 1 2-2Zm2 3h2V7h-2v1Zm-3 4v5h12v-5H8Zm2 2h2v1h-2v-1Z" />
+    ),
+    bot: (
+      <path d="M20 12a2 2 0 0 0-2-2h-1V8a4 4 0 0 0-8 0v2H6a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5ZM9 8a3 3 0 1 1 6 0v2H9V8Zm-1 9v-2h2v2H8Zm6 0v-2h2v2h-2Z" />
     ),
   }
 
